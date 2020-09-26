@@ -22,7 +22,6 @@ void dump_role(Role& role) {
 
 void test_role() {
 	char name[] = "¸ô¤H¥Ò";
-	
 	struct Role role;
 	
 	role.name = name;
