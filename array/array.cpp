@@ -2,23 +2,28 @@
 
 using namespace std; 
 
-int get(int p,int i,int j)
+const int i=3;
+const int j=2;
+int x,y;
+int array[]={1,2,3,4,5,6};
+
+int get(int i,int j)
 {
-	return p;
+	return array[y*i+x];
 }
 
-void set(int p,int i,int j,int v)
+void set(int i,int j,int v)
 {
-	p=v;
+	array[y*i+x]=v;
 }
 
-void dump(int *p,int i,int j)
+void dump()
 {
-	for(int y=0;y<j;y++)  
+	for(y=0;y<j;y++)  
 	{ 
-		for(int x=0;x<i;x++)  
+		for(x=0;x<i;x++)  
 		{      
-			cout<<"array["<<y<<"]"<<"["<<x<<"]"<<"="<<p[y*i+x]<<"  ";
+			cout<<"array["<<y<<"]"<<"["<<x<<"]"<<"="<<array[y*i+x]<<"  ";
 		}    
 		cout<<endl;
 	}
@@ -26,10 +31,6 @@ void dump(int *p,int i,int j)
 
 int main()
 {
-	const int i=3;
-	const int j=2;
-	int array[]={1,2,3,4,5,6};
-	int *p=array;
- 	dump(array,i,j);
+ 	dump();
 }
 
