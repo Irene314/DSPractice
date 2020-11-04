@@ -6,15 +6,16 @@ const int i=3;
 const int j=2;
 int x,y;
 int array[]={1,2,3,4,5,6};
+int *p=array; 
 
 get(int i,int j)
 {
-	return array[y*i+x];
+	return *(p+y*i+x);
 }
 
 set(int i,int j,int v)
 {
-	array[y*i+x]=v;
+	*(p+y*i+x)=v;
 }
 
 void dump()
