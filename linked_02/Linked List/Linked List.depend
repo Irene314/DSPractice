@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1604658928 source:d:\desktop\linked\main.cpp
+	"linked.h"
+	"test_linked.h"
+
+1604713816 d:\desktop\linked\linked.h
+
+1604708598 d:\desktop\linked\node.h
+
+1604655918 d:\desktop\linked\test_linked.h
+	<string>
+
+1604713334 source:d:\desktop\linked\test_linked.cpp
+	<iostream>
+	"linked.h"
+	"test_linked.h"
+
+1604713580 source:d:\desktop\linked\linked.cpp
+	<iostream>
+	"linked.h"
+
+1604713580 source:d:\desktop\linked_02\linked.cpp
+	<iostream>
+	"linked.h"
+
+1604713816 d:\desktop\linked_02\linked.h
+
+1604658928 source:d:\desktop\linked_02\main.cpp
+	"linked.h"
+	"test_linked.h"
+
+1604655918 d:\desktop\linked_02\test_linked.h
+	<string>
+
+1604713334 source:d:\desktop\linked_02\test_linked.cpp
+	<iostream>
+	"linked.h"
+	"test_linked.h"
+
+1604658928 source:d:\cmder\dspractice\linked_02\main.cpp
+	"linked.h"
+	"test_linked.h"
+
+1604713816 d:\cmder\dspractice\linked_02\linked.h
+
+1604655918 d:\cmder\dspractice\linked_02\test_linked.h
+	<string>
+
