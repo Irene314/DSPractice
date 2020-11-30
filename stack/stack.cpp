@@ -18,17 +18,17 @@ int pop() {
 }
 
 void top() {
-	cout<<"cache_[top_] = "<<cache_[top_]<<endl;
+	cout << "cache_[top_] = " << cache_[top_] << endl;
 }
 
 void peep(int i) {
 	if(i <= CAPACITY)
-		cout<<"cache_[ith] = "<<cache_[top_-i+1]<<endl;
+		cout << "cache_[ith] = " << cache_[top_-i+1] << endl;
 }
 
 void empty() {
-	for(int i=top_ ; i>=top_ ; top_--) {
-		cout<<cache_[top_]<<endl;
+	for(int i = top_ ; i >= top_ ; top_--) {
+		cout << cache_[top_] << endl;
 		if(top_ == 0)
 			break;
 	}
@@ -36,7 +36,7 @@ void empty() {
 
 void isEmpty() {
 	if(top_ == 0)
-		cout<<"cache_[] is empty."<<endl;
+		cout << "stack is empty." << endl;
 }
 
 int main() {
