@@ -9,10 +9,12 @@ int cache_[CAPACITY];
 
 void push(int d) {
 	cache_[top_] = d;
+	cout<<"Push a number: "<<d<<endl;
 	top_++; 
 }
 
 int pop() {
+	cout<<"Delete the top number: "<<cache_[top_]<<endl;	
 	top_--;
 	return cache_[top_];
 }
