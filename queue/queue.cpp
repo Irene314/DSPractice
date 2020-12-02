@@ -51,7 +51,7 @@ int main() {
 	enqueue(4);
 	enqueue(5);
 	enqueue(6);
-    dequeue();
+        dequeue();
 	head();
 	tail(); 
 	peep(2);
