@@ -8,9 +8,9 @@ int head_ = 0;
 int tail_ = 0;
 int cache_[BUFFER_SIZE];
 
-void enqueue(int d) {
-	cache_[tail_] = d;
+void enqueue(int d) { 
 	tail_ = (tail_+1) % BUFFER_SIZE;
+	cache_[tail_] = d;
 }
 
 int dequeue() {
@@ -51,8 +51,9 @@ int main() {
 	enqueue(4);
 	enqueue(5);
 	enqueue(6);
+    dequeue();
 	head();
-	tail();
+	tail(); 
 	peep(2);
 	empty();
 	isEmpty();
