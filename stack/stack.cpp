@@ -4,11 +4,11 @@ using namespace std;
 
 #define CAPACITY 128
 
-int top_ = 0;
+int top_ = -1;
 int cache_[CAPACITY];
 
 void push(int d) {
-	top_++;
+	top_++;	
 	cache_[top_] = d;
 	cout << "Push a number: " << cache_[top_] << endl; 
 }
@@ -31,6 +31,7 @@ int peep(int i) {
 
 void empty() {
 	for(int i = top_ ; i >= top_ ; top_--) {
+		cout << "top_ = " << top_ << "  cache_[top_] = " << cache_[top_] << endl;
 		if(top_ == 0)
 			break;
 	}
@@ -49,7 +50,6 @@ int main() {
 	push(5);
 	push(6);
 	top();
-	pop();
 	peep(2);
 	empty();
 	isEmpty();
