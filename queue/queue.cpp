@@ -5,7 +5,7 @@ using namespace std;
 #define BUFFER_SIZE 128
 
 int head_ = 0;
-int tail_ = 0;
+int tail_ = -1;
 int cache_[BUFFER_SIZE];
 
 void enqueue(int d) { 
@@ -51,7 +51,6 @@ int main() {
 	enqueue(4);
 	enqueue(5);
 	enqueue(6);
-        dequeue();
 	head();
 	tail(); 
 	peep(2);
