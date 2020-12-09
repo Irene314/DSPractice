@@ -39,9 +39,14 @@ void empty() {
 	}
 }
 
-void isEmpty() {
+bool isEmpty() {
 	if(head_ == tail_)
-		cout << "queue is empty." << endl;
+	{
+		cout << "Queue is empty." << endl;
+		return true;
+	}
+	else
+		return false;
 }
 
 int main() {
