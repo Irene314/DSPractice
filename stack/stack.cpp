@@ -37,9 +37,14 @@ void empty() {
 	}
 }
 
-void isEmpty() {
+bool isEmpty() {
 	if(top_ == 0)
-		cout << "stack is empty." << endl;
+	{	
+		cout<< "Stack is empty." <<endl;
+		return true;
+	}
+	else
+		return false;
 }
 
 int main() {
