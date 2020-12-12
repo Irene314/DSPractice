@@ -104,36 +104,38 @@ void TestLinked::test_remove_data() {
 
 void TestLinked::test_reverse_data() {
     Linked linked{10};
-
+    linked.dump_list();
     std::cout
         << "Testing function: reverse_data()..."
         << std::endl;
-    linked.reverse_data(10);
+    linked.reverse_data(0);
     linked.dump_list();
 
     if (!linked.contain_data(0)) {
         error("reverse_data() failed!!!");
     }
 } // test_reverse_data()
-/*
-void TestLinked::test_merge_data() {
-    Linked linked{10};
 
+void TestLinked::test_merge_data() {
+    Linked linkedL{9};
+    Linked linkedM{11};
     std::cout
         << "Testing function: merge_data()..."
         << std::endl;
 
-    linked.dump_list();
+    linkedL.dump_list();
+    linkedM.dump_list();
 
-    for (int i = 1; i < 10; i += 2) {
+    for (int i = 0; i < 10; i += 1) {
         std::cout
             << "    Merge node with node.data == "
             << i << std::endl;
 
-        linked.merge_data(i);
-        linked.dump_list();
+        linkedL.merge_data(i);
+        linkedL.dump_list();
+        linkedM.dump_list();
 
-        if (linked.contain_data(i)) {
+        if (!linkedL.contain_data(i)) {
             error("merge_data() failed!!!");
         };
     }
