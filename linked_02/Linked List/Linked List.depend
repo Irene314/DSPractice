@@ -37,12 +37,21 @@
 	"linked.h"
 	"test_linked.h"
 
-1604658928 source:d:\cmder\dspractice\linked_02\main.cpp
+1604978747 source:d:\cmder\dspractice\linked_02\main.cpp
 	"linked.h"
 	"test_linked.h"
 
-1604713816 d:\cmder\dspractice\linked_02\linked.h
+1606879920 d:\cmder\dspractice\linked_02\linked.h
 
 1604655918 d:\cmder\dspractice\linked_02\test_linked.h
 	<string>
+
+1605683097 source:d:\cmder\dspractice\linked_02\test_linked.cpp
+	<iostream>
+	"linked.h"
+	"test_linked.h"
+
+1605689356 source:d:\cmder\dspractice\linked_02\linked.cpp
+	<iostream>
+	"linked.h"
 
