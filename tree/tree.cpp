@@ -9,9 +9,9 @@ struct Node{
 
 Node *root_, *root_1, *n1, *n2, *n3, *n4, *n5;
 
-int root() {
+Node root() {
 	cout << "root = " << root_->data << endl;
-	return root_->data;
+	return *root_;
 }
 
 void addChild(Node *p, Node *n) {
