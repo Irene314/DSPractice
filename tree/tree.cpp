@@ -25,6 +25,7 @@ void cut(Node *t) {
 }
 
 void paste(Node *n, Node *t) {
+	root_1 = t;
 	n->children = root_1;
 	cout << "Paste a child tree "<< t->data << " in " << n->data << endl;
 }
