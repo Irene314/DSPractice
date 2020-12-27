@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1609056929 source:d:\cmder\dspractice\binary tree\tree.cpp
+	<iostream>
+	"node.h"
+
+1609056761 d:\cmder\dspractice\binary tree\node.h
+
