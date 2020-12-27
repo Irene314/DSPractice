@@ -33,7 +33,7 @@ void Node::search_breadth(Node *p){
 }
 
 void Node::search_preorder(Node *p){
-    if(p) {
+    if(p != NULL){
         std::cout << p->data << " ";
         search_preorder(p->left);
         search_preorder(p->right);
@@ -41,7 +41,7 @@ void Node::search_preorder(Node *p){
 }
 
 void Node::search_inorder(Node *p){
-    if(p) {
+    if(p != NULL){
         search_inorder(p->left);
         std::cout << p->data << " ";
         search_inorder(p->right);
@@ -49,7 +49,7 @@ void Node::search_inorder(Node *p){
 }
 
 void Node::search_postorder(Node *p){
-    if(p) {
+    if(p != NULL){
         search_postorder(p->left);
         search_postorder(p->right);
         std::cout << p->data << " ";
