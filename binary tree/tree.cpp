@@ -28,11 +28,11 @@ void Node::paste(Node *n, Node *t){
         n->left = t;
 }
 
-void *Node::search_breadth(Node *p){
+void Node::search_breadth(Node *p){
 
 }
 
-void *Node::search_preorder(Node *p){
+void Node::search_preorder(Node *p){
     if(p) {
         std::cout << p->data << " ";
         search_preorder(p->left);
@@ -40,7 +40,7 @@ void *Node::search_preorder(Node *p){
     }
 }
 
-void *Node::search_inorder(Node *p){
+void Node::search_inorder(Node *p){
     if(p) {
         search_inorder(p->left);
         std::cout << p->data << " ";
@@ -48,7 +48,7 @@ void *Node::search_inorder(Node *p){
     }
 }
 
-void *Node::search_postorder(Node *p){
+void Node::search_postorder(Node *p){
     if(p) {
         search_postorder(p->left);
         search_postorder(p->right);
