@@ -8,15 +8,13 @@ class Node {
 		void addChild(Node *, Node *);
 		void cut(Node *);
 		void paste(Node *, Node *);
-		Node *search_breadth(int);
-		Node *search_depth_pre(int);
-		Node *search_depth_in(int);
-		Node *search_depth_post(int);
+		void *search_breadth(Node *);
+		void *search_preorder(Node *);
+		void *search_inorder(Node *);
+		void *search_postorder(Node *);
 
     public:
         int data;
-
-	private:
 		Node *left;
 		Node *right;
 };
