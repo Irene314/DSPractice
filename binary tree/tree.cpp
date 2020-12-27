@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <queue>
 #include "node.h"
 
 Node *Node::root(){
@@ -29,7 +29,16 @@ void Node::paste(Node *n, Node *t){
 }
 
 void Node::search_breadth(Node *p){
-
+    std::queue <Node*> que;
+    que.push(p);
+    while (!que.empty()){
+        std::cout << que.front()->data << " ";
+        if (que.front()->left != NULL)
+            que.push(que.front()->left);
+        if (que.front()->right != NULL)
+            que.push(que.front()->right);
+        que.pop();
+    }
 }
 
 void Node::search_preorder(Node *p){
