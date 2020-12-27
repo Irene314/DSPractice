@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1609060633 source:d:\cmder\dspractice\binary tree\tree.cpp
+1609077837 source:d:\cmder\dspractice\binary tree\tree.cpp
 	<iostream>
 	"node.h"
 
-1609061081 d:\cmder\dspractice\binary tree\node.h
+1609077837 d:\cmder\dspractice\binary tree\node.h
 
-1609060730 source:d:\cmder\dspractice\binary tree\main.cpp
+1609077862 source:d:\cmder\dspractice\binary tree\main.cpp
 	<iostream>
 	"node.h"
 
