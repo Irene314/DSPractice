@@ -2,7 +2,7 @@
 
 #include "node.h"
 
-Node::Node(int data) {
+Node::Node() {
 
 }
 
@@ -11,7 +11,8 @@ Node::~Node() {
 }
 
 Node *Node::root(){
-
+    Node *root_ = new Node();
+    return root_;
 }
 
 void Node::addChild(Node *p, Node *n){
