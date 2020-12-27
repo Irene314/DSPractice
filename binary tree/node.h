@@ -1,6 +1,6 @@
 class Node {
 	public:
-		Node(int);
+		Node();
 		~Node();
 
 	public:
