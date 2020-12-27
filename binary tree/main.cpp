@@ -31,12 +31,22 @@ int main(int argc, char *argv[]) {
     n7->left = NULL;
     n7->right = NULL;
 
-    tree.search_breadth(n1);
-    std::cout<<std::endl;
-    tree.search_preorder(n1);
-    std::cout<<std::endl;
-    tree.search_inorder(n1);
-    std::cout<<std::endl;
-    tree.search_postorder(n1);
+    /*     n1
+          /  \
+        n2     n3
+       /  \   /  \
+      n4  n5 n6  n7   */
+
+    std::cout << "search_breadth: " << std::endl;
+    tree.search_breadth(root_);
+    std::cout << std::endl;
+    std::cout << "search_preorder: " << std::endl;
+    tree.search_preorder(root_);
+    std::cout << std::endl;
+    std::cout << "search_inorder: " << std::endl;
+    tree.search_inorder(root_);
+    std::cout << std::endl;
+    std::cout << "search_postorder: " << std::endl;
+    tree.search_postorder(root_);
 } // main()
 
