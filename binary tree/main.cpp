@@ -3,6 +3,7 @@
 #include "node.h"
 
 int main(int argc, char *argv[]) {
+    Node tree;
     Node *n1 = new Node();
     Node *n2 = new Node();
     Node *n3 = new Node();
@@ -21,11 +22,21 @@ int main(int argc, char *argv[]) {
     n2->right = n5;
     n3->left = n6;
     n3->right = n7;
+    n4->left = NULL;
+    n4->right = NULL;
+    n5->left = NULL;
+    n5->right = NULL;
+    n6->left = NULL;
+    n6->right = NULL;
+    n7->left = NULL;
+    n7->right = NULL;
 
-    void *search_breadth(n1);
-//    void *search_preorder(n1);
-//    void *search_inorder(n1);
-//    void *search_postorder(n1);
-
+    tree.search_breadth(n1);
+    std::cout<<std::endl;
+    tree.search_preorder(n1);
+    std::cout<<std::endl;
+    tree.search_inorder(n1);
+    std::cout<<std::endl;
+    tree.search_postorder(n1);
 } // main()
 
