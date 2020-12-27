@@ -1,9 +1,5 @@
 class Node {
 	public:
-		Node();
-		~Node();
-
-	public:
 		Node *root();
 		void addChild(Node *, Node *);
 		void cut(Node *);
