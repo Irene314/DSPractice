@@ -1,7 +1,6 @@
 # 109-1 資料結構
 108153066　資應二　林育琳
 
-Homework:
 1. role
 2. array
 3. linked_01
